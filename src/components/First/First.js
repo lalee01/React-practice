@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import './First.css';
 
 const First =({isRounded}) => {
-    const [isBlur, setIsBlur] = useState(false)
+    const [isBlur, setIsBlur] = useState(true)
 
     const onClickHandler = () => setIsBlur(!isBlur)
         

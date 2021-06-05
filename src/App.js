@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import First from './components/First/First'
+import Second from './components/Second/Second'
 import Fifth from './components/Fifth/Fifth'
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
   return (
     <div className='App'>
       <First isRounded={isRounded}/>
+      <Second />
       <Fifth isRounded={isRounded} setIsRounded={setIsRounded}/>
     </div>
   );
