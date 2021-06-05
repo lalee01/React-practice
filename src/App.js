@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className='App'>
       <First isRounded={isRounded}/>
-      <Second />
+      <Second isRounded={isRounded}/>
       <Fifth isRounded={isRounded} setIsRounded={setIsRounded}/>
     </div>
   );
