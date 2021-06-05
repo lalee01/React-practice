@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import First from './First/First'
-import Fifth from './Fifth'
+import First from './components/First/First'
+import Fifth from './components/Fifth/Fifth'
 
 const App = () => {
   const [isRounded, setIsRounded] = useState(false)
