@@ -4,7 +4,7 @@ const Fifth =({isRounded, setIsRounded}) => {
     const onClickHandler = () => setIsRounded(!isRounded)
         
     return (   
-        <div className={ "box"} style={ isRounded ? {borderRadius: '50%', backgroundColor: 'red'} : {backgroundColor: 'red'}} onClick={ onClickHandler }>
+        <div className={ "box"} style={ isRounded ? {borderRadius: '50%', backgroundColor: 'sandybrown'} : {backgroundColor: 'sandybrown'}} onClick={ onClickHandler }>
             <span className='text'>
                         5
             </span>
