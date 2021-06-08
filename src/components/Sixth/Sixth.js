@@ -21,7 +21,7 @@ const Sixth =({isRounded}) => {
             </span>
             <form id="box-6">
             <input className="w-95" type="number" name="boxNumber" onChange={onChangeHandler}/>
-            <button className="w-100" type="submit" onSubmit={numberChange}>Küldés</button>
+            <button className="w-100" type="submit" >Küldés</button>
                 </form>
         </div>
     );
