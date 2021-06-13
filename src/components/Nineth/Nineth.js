@@ -7,13 +7,13 @@ const Nineth =({isRounded}) => {
 const onChangeHandler=(event)=>{
     const number = event.target.value
     numberChange(number)
+    console.log(number)
 } 
 const onSubmitHandler=(event)=>{
     event.preventDefault()
-    console.log("akkor")
+    console.log("Submit")
 
 }
-        console.log(number)
     return (   
         <div className={"shape"} id ="element-nine" style={ isRounded ? {borderRadius: '50%'} : {}}>
             <span className='text'>
@@ -26,8 +26,8 @@ const onSubmitHandler=(event)=>{
                         <option value="add">+</option>
                         <option value="sub">-</option>
                     </select>
-                    <input class="w-95" type="number" onChange={onChangeHandler}/>
-                    <button class="w-100" type="submit" onClick={onSubmitHandler}>Küldés</button>
+                    <input className="w-95" type="number" onChange={onChangeHandler}/>
+                    <button className="w-100" type="submit" onClick={onSubmitHandler}>Küldés</button>
                 </form>
         </div>
     );
