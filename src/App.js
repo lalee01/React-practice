@@ -30,7 +30,7 @@ const mouseMoveHandler = (event) =>{
       <First isRounded={isRounded}/>
       <Second isRounded={isRounded}/>
       <Third isRounded={isRounded} />
-      <Fourth />
+      <Fourth isRounded={isRounded}/>
       <Fifth isRounded={isRounded} setIsRounded={setIsRounded}/>
       <Sixth isRounded={isRounded} />
       <Seventh isRounded={isRounded} />
