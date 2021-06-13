@@ -6,8 +6,9 @@ const Second =({isRounded}) => {
     const onMouseOutHandler = () => setColor(!color)
     
     return (   
-        <div className='box'
-        style={color ? {backgroundColor:'red'} : {backgroundColor:'firebrick'}} 
+        <div className="shape"
+        style={color ? {backgroundColor:'red'} : {}}
+        id ="element-two" 
         onMouseOver={onMouseOverHandler} 
         onMouseOut={onMouseOutHandler}>
             <span className='text'>

@@ -9,7 +9,7 @@ const Fourth =({isRounded}) => {
         const timer= ()=> setTimeout(() => setHidden(false), 1000);
 
     return (   
-        <div className={"box"} style={isHidden ? {display:'none'}:{display:'block'}} onClick={onClickHandler}>
+        <div className={"shape"} id ="element-four" style={isHidden ? {display:'none'}:{display:'block'}} onClick={onClickHandler}>
             <span className='text'>
                        4
             </span>

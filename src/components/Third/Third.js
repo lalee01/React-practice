@@ -7,7 +7,7 @@ const Third =({isRounded}) => {
     }
         
     return (   
-        <div className={"box"} style={ isRounded ? {borderRadius: '50%'} : {}} onDoubleClick={doubleClickHandler}>
+        <div className={"shape"} id ="element-three" style={ isRounded ? {borderRadius: '50%'} : {}} onDoubleClick={doubleClickHandler}>
             <span className='text'>
                        {number}
             </span>
