@@ -5,9 +5,9 @@ const Seventh =({isRounded}) => {
     const keyPressHandler = (event) =>{
         setPressedKey(event.key)
     }
-        
+    const roundingStyle = isRounded ? {borderRadius: "50%"} : {};
     return (   
-        <div className={"shape"} id ="element-seven" style={ isRounded ? {borderRadius: '50%'} : {}} onKeyPress={keyPressHandler}>
+        <div className={"shape"} id ="element-seven" style={roundingStyle} onKeyPress={keyPressHandler}>
             <span className='text'>
                        {pressedKey}
             </span>

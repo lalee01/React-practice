@@ -25,24 +25,23 @@ const Nineth =({isRounded}) => {
             case "sub" : return setNewNumber(Number(newNumber) - Number(numberState))
         }
     }
+    const roundingStyle = isRounded ? {borderRadius: "50%"} : {};
     return (   
-        <div className={"shape"} id ="element-nine" style={ isRounded ? {borderRadius: '50%'} : {}}>
+        <div className={"shape"} id ="element-nine" style={roundingStyle}>
             <span className='text'>
                        {newNumber}
             </span>
-            <form id="box-9">
+            <form id="box-9">                
+                    <input className="w-95" type="number" onChange={onChangeHandler}/>                  
                     <select name="operator" onChange={selectOperator}>
                         <option value="mult">×</option>
                         <option value="div">/</option>
                         <option value="add">+</option>
                         <option value="sub">-</option>
                     </select>
-                    <input className="w-95" type="number" onChange={onChangeHandler}/>
                     <button className="w-100" type="submit" onClick={onSubmitHandler}>Küldés</button>
                 </form>
         </div>
     );
 }
-
-
 export default Nineth

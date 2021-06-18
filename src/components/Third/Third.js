@@ -5,9 +5,9 @@ const Third =({isRounded}) => {
     const doubleClickHandler = () => {
         setNumber(Math.floor(Math.random() * (20 - 1 + 1)) +1)
     }
-        
+    const roundingStyle = isRounded ? {borderRadius: "50%"} : {};
     return (   
-        <div className={"shape"} id ="element-three" style={ isRounded ? {borderRadius: '50%'} : {}} onDoubleClick={doubleClickHandler}>
+        <div className={"shape"} id ="element-three" style={roundingStyle} onDoubleClick={doubleClickHandler}>
             <span className='text'>
                        {number}
             </span>

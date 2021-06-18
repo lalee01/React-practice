@@ -17,8 +17,9 @@ const Sixth =({isRounded}) => {
         const number = event.target.value
         numberChange(number)
         }
+        const roundingStyle = isRounded ? {borderRadius: "50%"} : {};
     return (   
-        <div className={"shape"} id ="element-six" style = { isRounded ? {borderRadius: '50%'} : {}}>
+        <div className={"shape"} id ="element-six" style = {roundingStyle}>
             <span className='text'>
                        {inBoxNumber}
             </span>
